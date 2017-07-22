@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Scala notations</title>
+    <style type="text/css">
+        body {
+            background-size: 40px 40px;
+            background-image: linear-gradient(to right, #25a4c5 1px, transparent 1px), linear-gradient(to bottom, #25a4c5 1px, transparent 1px);
+        }
+
+        #canvas {
+            position: absolute;
+            top: 0;
+            width: 900px;
+            height: 180px;
+        }
+
+        #motto {
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+<img id="motto" src="assets/keep-calm-and-study-algorithms.png" alt="Keep calm meme" title="Keep calm and study algorithms"/>
+<canvas id="canvas"></canvas>
+<!-- Include Scala.js compiled code -->
+<script type="text/javascript" src="./target/scala-2.12/course-fastopt.js"></script>
+</body>
+</html>
