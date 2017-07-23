@@ -14,5 +14,7 @@ libraryDependencies += "org.scala-js" %%% "scalajs-dom" % "0.9.1"
 
 enablePlugins(ScalaJSPlugin)
 
-scalaJSUseMainModuleInitializer := true
+scalaJSUseMainModuleInitializer := false
 
+jsDependencies += "org.webjars.npm" % "paper" % "0.11.4" / "paper-full.min.js" commonJSName "paper"
+// jsDependencies += "org.webjars" % "paperjs" % "0.11.4" / "paper-full.min.js" commonJSName "paper"

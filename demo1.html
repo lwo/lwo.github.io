@@ -3,6 +3,7 @@
 <head>
     <title>Scala notations 1</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <script type="text/javascript" src="assets/js/course-jsdeps.js"></script>
     <script type="text/javascript" src="assets/js/course-opt.js"></script>
     <style type="text/css">
         body {
@@ -20,14 +21,19 @@
         #motto {
             display: block;
             margin: 0 auto;
+            opacity: 0.1;
         }
     </style>
 </head>
 <body>
-<ol>
-    <li><a href="demo1.html">Paint squares on the canvas.</a></li>
-    <li><a href="demo2.html">Paint vectors on the canvas.</a></li>
-</ol>
 <img id="motto" src="assets/images/keep-calm-and-study-algorithms.png" alt="Keep calm meme" title="Keep calm and study algorithms"/>
+<div>
+    <canvas style="display: block" id="canvas" width="500" height="500"></canvas>
+</div>
+<script type="text/javascript">
+    window.onload = function() {
+        Demo1.main(document.getElementById('canvas'));
+    }
+</script>
 </body>
 </html>

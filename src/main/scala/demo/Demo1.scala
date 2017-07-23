@@ -1,28 +1,23 @@
-package tutorial.webapp
+package demo
+
+import java.lang.Math._
 
 import org.scalajs.dom
-import dom.{CanvasRenderingContext2D, document, html}
-import Math._
+import org.scalajs.dom.{CanvasRenderingContext2D, html}
 
-import org.scalajs.dom.html.Canvas
+import scala.scalajs.js.annotation.{JSExport, JSExportTopLevel}
 
+@JSExportTopLevel("Demo1")
+object Demo1 {
 
-object TutorialApp {
-
-  def getElem[T](id: String): T = document.getElementById(id).asInstanceOf[T]
-
-  val canvas: Canvas = getElem[html.Canvas]("canvas")
-  val draw: CanvasRenderingContext2D = canvas.getContext("2d").asInstanceOf[dom.CanvasRenderingContext2D]
-
-  def polygon(x: Double ): Double = pow(x, 2) - 2*x + 1D
-
-  def main(args: Array[String]): Unit = {
+  @JSExport
+  def main(canvas: html.Canvas): Unit = {
+    val draw: CanvasRenderingContext2D = canvas.getContext("2d").asInstanceOf[dom.CanvasRenderingContext2D]
     val (h, w) = (canvas.height, canvas.width)
     var x = 0.0
     val rr = 1000
     val graphs = Seq[(String, Double => Double)](
       ("red", sin),
-      ("black", polygon),
       ("green", x => 2 - abs(x % 8 - 4)),
       ("blue", x => 3 * pow(sin(x / 12), 2) * sin(x))
     ).zipWithIndex
