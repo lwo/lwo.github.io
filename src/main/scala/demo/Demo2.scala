@@ -1,6 +1,6 @@
 package demo
 
-import java.lang.Math.{abs, pow, sin}
+import java.lang.Math._
 
 import org.scalajs.dom
 import org.scalajs.dom.html
@@ -8,7 +8,6 @@ import paperjs.Basic.Point
 import paperjs.Paper
 import paperjs.Paths.Path
 import paperjs.Styling.Color
-
 import scala.scalajs.js.annotation.{JSExport, JSExportTopLevel}
 
 @JSExportTopLevel("Demo2")
