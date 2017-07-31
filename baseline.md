@@ -1,4 +1,4 @@
-##Algebraic structure
+## Algebraic structure
 An algebraic structure is a set with some operation(s) on its elements. In what follows we name:
 
 |symbol|meaning|
@@ -18,7 +18,7 @@ An algebraic structure is a set with some operation(s) on its elements. In what 
 |example ○ = product| 1 * 1 = 1|(3 * 4) * 5 = 3 * (4 * 5)| 6 * 1 = 1 * 6 = 6|7 * 1/7 = 1/7 * 7 = 1|8 * 9 = 9 * 8|
 
 
-##Algebraic structures and the laws that apply
+## Algebraic structures and the laws that apply
 
 |Algebraic structure|Closure|Associativity|Identity|Invertibility|Communativity|
 |--||--||--||--||--||--|
