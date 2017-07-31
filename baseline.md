@@ -1,4 +1,5 @@
 ## Algebraic structure
+
 An algebraic structure is a set with some operation(s) on its elements. In what follows we name:
 
 |symbol|meaning|
@@ -22,9 +23,9 @@ An algebraic structure is a set with some operation(s) on its elements. In what 
 
 |Algebraic structure|Closure|Associativity|Identity|Invertibility|Communativity|
 |--||--||--||--||--||--|
-Semicategory|No|Yes|No|No|No|
-Category|No|Yes|Yes|No|No|
-Groupiod|No|Yes|Yes|Yes|No|
+|Semicategory|No|Yes|No|No|No|
+|Category|No|Yes|Yes|No|No|
+|Groupiod|No|Yes|Yes|Yes|No|
 |Quasigroup|Yes|No|No|Yes|No|
 |Loop|Yes|No|Yes|Yes|No|
 |Magma|Yes|No|No|No|No|
@@ -33,7 +34,6 @@ Groupiod|No|Yes|Yes|Yes|No|
 |Group|Yes|Yes|Yes|Yes|No|
 |Abelian Group|Yes|Yes|Yes|Yes|Yes|
 
-
 ## Focus in on the algebraic Category structure
 A category is an algebraic structure that follows Identity and Associativity laws. Its elements are **arrows** and the operation is arrow **composition**.
 
@@ -41,7 +41,6 @@ A category is an algebraic structure that follows Identity and Associativity law
 |--|--|--|
 | |a->b and b->c and d|a->b ○ b->c|
 |A programming language|Types and one-argument functions|(Int=>Int) ○ (Int => Int)|
-
 
 ### Composition
 For example: an arrow named 'f' is f: A->B
