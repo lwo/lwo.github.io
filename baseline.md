@@ -14,7 +14,7 @@ An algebraic structure is a set with some operation(s) on its elements. In what 
 | |Closure|Associativity|Identity|Invertibility|Communativity|
 |-|---|---|---|---|---|
 ||∀ (a, b) ∈ M: a ○ b ∈ M|∀ (a, b, c) ∈ M:  (a ○ b) ○ c = a ○ (b ○ c)|∀ (a) ∈ M: a ○ e = e ○ a = a|∀ (a, b) ∈ M: a ○ b = b ○ a = e|∀ (a, b) ∈ M: a ○ b = b ○ a|
-|In scala notation|def op(a: T, b: T): T|(a op b) op c == a op (b op c)|e op a== a op e == a|a op b == b op a == e |a op b == b op a|
+|In scala notation|def op(a: T, b: T): T|(a op b) op c == a op (b op c)|e op a == a op e == a|a op b == b op a == e |a op b == b op a|
 |example ○ = addition| 1 + 1 = 2|(3+4)+5 = 3 + (4 + 5)| 6 + 0 = 0 + 6 = 6|7 + -7 = -7 + 7 = 0|8 + 9 = 9 + 8|
 |example ○ = product| 1 * 1 = 1|(3 * 4) * 5 = 3 * (4 * 5)| 6 * 1 = 1 * 6 = 6|7 * 1/7 = 1/7 * 7 = 1|8 * 9 = 9 * 8|
 
@@ -22,7 +22,7 @@ An algebraic structure is a set with some operation(s) on its elements. In what 
 ## Algebraic structures and the laws that apply
 
 |Algebraic structure|Closure|Associativity|Identity|Invertibility|Communativity|
-|--||--||--||--||--||--|
+|--|--|--|--|--|--|
 |Semicategory|No|Yes|No|No|No|
 |Category|No|Yes|Yes|No|No|
 |Groupiod|No|Yes|Yes|Yes|No|
