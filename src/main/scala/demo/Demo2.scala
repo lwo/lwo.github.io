@@ -15,13 +15,11 @@ object Demo2 {
 
   @JSExport
   def main(canvas: html.Canvas): Unit = {
-
     Paper.setup(canvas)
     val (h, w) = (canvas.height, canvas.width)
     var x = 0.0
     var xx = x
     var inc = 1
-
     val graphs = Seq[(String, Double => Double, Path)](
       ("red", sin, new Path()),
       ("green", x => 2 - abs(x % 8 - 4), new Path()),

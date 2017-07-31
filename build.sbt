@@ -1,4 +1,4 @@
-name := "demo"
+name := "notation"
 
 version := "1.0"
 
