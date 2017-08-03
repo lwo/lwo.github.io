@@ -1,6 +1,10 @@
-## Algebraic structure
+## Functional programming with Scala
 
-An algebraic structure is a set with some operation(s) on its elements. In what follows we name:
+Scala uses basic algebra in its design patterns and API: Monoid, Monad, Functor.
+
+## Algebraic laws and structure
+
+An algebraic structure is a set of elements with some operation(s) on its elements that conform to one ore more algebraic laws. In what follows we name:
 
 |symbol|meaning|
 |--|--|
@@ -9,7 +13,7 @@ An algebraic structure is a set with some operation(s) on its elements. In what 
 |○|an operation, or mapping, function, morphism.|
 |e|an identity element that has no effect when ○ applies it to an element. E.g. 0 with addition; 1 with multiplication; empty string with concatation; Nil with lists.|
 
-## Algebraic laws
+## Basic algebraic laws
 
 | |Closure|Associativity|Identity|Invertibility|Communativity|
 |-|---|---|---|---|---|
@@ -19,7 +23,7 @@ An algebraic structure is a set with some operation(s) on its elements. In what 
 |example ○ = product| 1 * 1 = 1|(3 * 4) * 5 = 3 * (4 * 5)| 6 * 1 = 1 * 6 = 6|7 * 1/7 = 1/7 * 7 = 1|8 * 9 = 9 * 8|
 
 
-## Algebraic structures and the laws that apply
+## Algebraic structures
 
 |Algebraic structure|Closure|Associativity|Identity|Invertibility|Communativity|
 |--|--|--|--|--|--|
