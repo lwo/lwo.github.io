@@ -70,3 +70,13 @@ Source: https://en.wikiversity.org/wiki/Introduction_to_Category_Theory/Monoids#
 No information is lost !!!
 
 http://www.michael-noll.com/blog/2013/12/02/twitter-algebird-monoid-monad-for-large-scala-data-analytics/
+
+### Scala endoFunctor
+
+Note that in a sequence using maps produces nestled functors
+F(F(F(F(F(F(F))))))
+ 
+Using flatmap we can change them 
+ == F->F->F->F->F
+
+### Monad: a monoid in the category of endofunctors

@@ -118,22 +118,9 @@ class AddOne(val predecessor: Nat) extends Nat {
   }
 }
 
-object testNat   extends App {
-
+object Nat {
   def apply(n: Int): Nat = {
     if ( n == 0) AddZero
     else new AddOne(apply(n - 1))
   }
-
-  val ZERO = apply(0)
-  val ONE = apply(1)
-  val TWO = apply(2)
-  val THREE = apply(3)
-  val FOUR = apply(4)
-  val FIVE = apply(5)
-  val FIFTEEN = apply(15)
-
-  val list:List[Nat] = List(ONE, TWO, THREE, FOUR, FIVE)
-  assert( {list filter (_ < THREE)} == List(ONE, TWO))
-  assert( (list foldLeft ZERO)(_+_) == FIFTEEN)
 }
