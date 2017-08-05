@@ -1,26 +1,27 @@
+package c1
+
+import c1.w4.Nat
 import org.junit.runner.RunWith
 import org.scalatest.FunSuite
 import org.scalatest.junit.JUnitRunner
 
-import c1.w4.Nat
-
-trait Numbers {
-
-  val Zero = Nat(0)
-  val One: Nat = Nat(1)
-  val Two: Nat = Nat(2)
-  val Three: Nat = Nat(3)
-  val Four: Nat = Nat(4)
-  val Five: Nat = Nat(5)
-  val Six: Nat = Nat(6)
-  val Seven: Nat = Nat(7)
-  val Eight: Nat = Nat(8)
-  val Nine: Nat = Nat(9)
-  val Ten: Nat = Nat(10)
-}
-
 @RunWith(classOf[JUnitRunner])
 class NatSuite extends FunSuite {
+
+  trait Numbers {
+
+    val Zero = Nat(0)
+    val One: Nat = Nat(1)
+    val Two: Nat = Nat(2)
+    val Three: Nat = Nat(3)
+    val Four: Nat = Nat(4)
+    val Five: Nat = Nat(5)
+    val Six: Nat = Nat(6)
+    val Seven: Nat = Nat(7)
+    val Eight: Nat = Nat(8)
+    val Nine: Nat = Nat(9)
+    val Ten: Nat = Nat(10)
+  }
 
   test("Comparison") {
     new Numbers {

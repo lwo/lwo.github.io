@@ -1,8 +1,9 @@
+package c1
+
+import c1.w6.Mnemonics
 import org.junit.runner.RunWith
 import org.scalatest.FunSuite
 import org.scalatest.junit.JUnitRunner
-
-import c1.w6.Mnemonics
 
 @RunWith(classOf[JUnitRunner])
 class MnemonicsSuite extends FunSuite {
