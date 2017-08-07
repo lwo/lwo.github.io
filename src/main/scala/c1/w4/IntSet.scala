@@ -16,17 +16,10 @@ abstract class IntSet {
 }
 
 
-class Empty extends IntSet {
-  def contains(x: Int): Boolean = false
-  def incl(x: Int): IntSet = new NonEmpty(x, new Empty, new Empty)
-  override def toString = "."
-  def union(other: IntSet): IntSet = other
-}
-
-object Empty2 extends IntSet {
+object Empty extends IntSet {
   def contains(x: Int): Boolean = false
   
-  def incl(x: Int): IntSet = new NonEmpty(x, Empty2, Empty2)
+  def incl(x: Int): IntSet = new NonEmpty(x, Empty, Empty)
   
   override def toString = "."
   def union(other: IntSet): IntSet = other
