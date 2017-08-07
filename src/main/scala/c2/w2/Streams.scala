@@ -57,7 +57,6 @@ class Streams {
     def improve(guess: Double) = (guess + x / guess) / 2
 
     lazy val guesses: Stream[Double] = 1 #:: (guesses map improve)
-//    (guesses filter isGoodEnough take 1).head
     (guesses filter isGoodEnough).head
   }
 
