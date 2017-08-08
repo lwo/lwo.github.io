@@ -18,7 +18,7 @@ class Streams {
     else Stream.cons(lo, streamRange(lo + 1, hi))
   }
 
-  def from(n: Int): Stream[Int] = n #:: from(n + 1)
+  def from(start: Int): Stream[Int] = start #:: from(start + 1)
 
   /**
     * The collection of natural numbers
@@ -41,7 +41,6 @@ class Streams {
     def sieve(stream: Stream[Int]): Stream[Int] = {
       stream.head #:: sieve(stream.tail filter (_ % stream.head != 0))
     }
-
     sieve(from(2))
   }
 
