@@ -1,4 +1,4 @@
-package c3
+package c2.w3
 
 import c2.w3.{Circuits, Gates, Parameters}
 import org.junit.runner.RunWith

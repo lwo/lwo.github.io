@@ -1,6 +1,5 @@
-package c2
+package c2.w2
 
-import c2.w2.Streams
 import org.junit.runner.RunWith
 import org.scalatest.FunSuite
 import org.scalatest.junit.JUnitRunner

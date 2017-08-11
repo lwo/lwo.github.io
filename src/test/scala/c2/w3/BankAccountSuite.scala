@@ -1,6 +1,5 @@
-package c3
+package c2.w3
 
-import c2.w3.BankAccount
 import org.junit.runner.RunWith
 import org.scalatest.FunSuite
 import org.scalatest.junit.JUnitRunner

@@ -1,6 +1,5 @@
-package c2
+package c2.w1
 
-import c2.w1.Generator
 import org.junit.runner.RunWith
 import org.scalatest.FunSuite
 import org.scalatest.junit.JUnitRunner

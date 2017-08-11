@@ -12,6 +12,8 @@ libraryDependencies += "org.scalatest" %% "scalatest" % "3.0.0"
 
 libraryDependencies += "org.scala-js" %%% "scalajs-dom" % "0.9.1"
 
+libraryDependencies += "com.typesafe.akka" %% "akka-actor" % "2.5.3"
+
 enablePlugins(ScalaJSPlugin)
 
 scalaJSUseMainModuleInitializer := false
