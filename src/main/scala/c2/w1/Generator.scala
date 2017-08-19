@@ -2,7 +2,6 @@ package c2.w1
 
 trait Generator[+T] {
   self =>
-  this
 
   def generate: T // the random bit
   def foreach[U](f: T => U) {

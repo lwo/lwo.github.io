@@ -14,6 +14,16 @@ libraryDependencies += "org.scala-js" %%% "scalajs-dom" % "0.9.1"
 
 libraryDependencies += "com.typesafe.akka" %% "akka-actor" % "2.5.3"
 
+libraryDependencies += "com.storm-enroute" %% "scalameter-core" % "0.8.2"
+
+resolvers ++= Seq(
+  Resolver.bintrayRepo("stanch", "maven")
+)
+
+testFrameworks += new TestFramework("org.scalameter.ScalaMeterFramework")
+
+parallelExecution in Test := false
+
 enablePlugins(ScalaJSPlugin)
 
 scalaJSUseMainModuleInitializer := false
