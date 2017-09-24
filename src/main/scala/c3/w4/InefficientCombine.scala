@@ -24,5 +24,8 @@ class InefficientCombine extends Combiner[Int, Array[Int]] {
 
   override def result: Array[Int] = buffers.result().toArray
 
-  override def newBuilder = null // dummy
+  override def newBuilder = ??? // dummy
+  override def hasNext = ???
+
+  override def next() = ???
 }

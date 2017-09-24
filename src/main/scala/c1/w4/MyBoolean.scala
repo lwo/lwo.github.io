@@ -8,6 +8,7 @@ abstract class MyBoolean {
 
   def ||(x: => MyBoolean): MyBoolean = ifThenElse(True, x)
 
+  // NOT
   def unary_! : MyBoolean = ifThenElse(False, True)
 
   def ==(x: MyBoolean): MyBoolean = ifThenElse(x, x.unary_!)
@@ -19,10 +20,13 @@ abstract class MyBoolean {
   def >(x: MyBoolean): MyBoolean = ifThenElse(x.unary_!, False)
 
 }
+
+// λx.λy.x
 object False extends MyBoolean {
   def ifThenElse[T](first: => T, second: => T): T = second
 }
 
+// λx.λy.y
 object True extends MyBoolean {
   def ifThenElse[T](first: => T, second: => T): T = first
 }
